@@ -23,10 +23,7 @@ const NoteFormSchema = Yup.object().shape({
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  content: Yup.string()
-    .min(3, "Too Short!")
-    .max(500, "Too Long!")
-    .required("Required"),
+  content: Yup.string().max(500, "Too Long!"),
   tag: Yup.string()
     .oneOf(["Todo", "Work", "Personal", "Meeting", "Shopping"])
     .required("Required"),
