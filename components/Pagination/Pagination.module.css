@@ -47,3 +47,9 @@
   color: #fff !important;
   font-weight: 500;
 }
+.pageItem {}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
